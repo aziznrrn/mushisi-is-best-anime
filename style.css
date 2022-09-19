@@ -1,8 +1,15 @@
 body {
     margin: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    line-height: 1.5;
-    max-width: 1280px;
+    line-height: 1.6;
+    margin-left: 300px;
+    background-color: hsl(60, 9%, 87%);
+    color: #262625;
+}
+
+header, main, footer {
+    max-width: 1000px;
+    padding-inline: 2rem;
     margin-inline: auto;
 }
 
@@ -10,17 +17,13 @@ article {
     margin-block: 2.4rem;
 }
 
-header, footer, main {
-    margin-left: 280px;
-    width: calc(100% - 280px);
-    padding-inline: 2rem;
-}
-
 aside {
-    background-color: bisque;
+    background-color: hsl(14, 17%, 20%);
+    color: hsl(237, 21%, 82%);
     position: fixed;
     top: 0;
-    width: 280px;
+    left: 0;
+    width: 300px;
     height: 100%;
     box-sizing: border-box;
     padding: 1.6rem;
@@ -43,14 +46,14 @@ figure:has(img) figcaption {
     left: 0;
     right: 0;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: hsl(120, 6%, 97%);
     padding: 0.2rem;
     overflow: hidden;
 }
 
 blockquote p {
     padding: 1rem;
-    background: antiquewhite;
+    background: hsl(120, 6%, 97%);
     border-radius: 5px;
 }
 
@@ -73,36 +76,35 @@ table {
 
 thead th {
    padding: 8px 10px;
-   color: #000;
-   border-top: 2px solid bisque;
+   border-top: 2px solid hsl(49, 8%, 40%);
 }
 
 td, th {
-    background-color: antiquewhite;
+    background-color: hsl(120, 6%, 97%);
     padding: 5px 10px;
 }
 
 thead th:first-child {
-   border-left: 2px solid bisque;
+   border-left: 2px solid hsl(49, 8%, 40%);
    border-top-left-radius: 5px;
 }
 
 thead th:last-child {
-   border-right: 2px solid bisque;
+   border-right: 2px solid hsl(49, 8%, 40%);
    border-top-right-radius: 5px;
 }
 
 tbody th {
-    border-inline: 2px solid bisque;
+    border-inline: 2px solid hsl(49, 8%, 40%);
 }
 
 td:last-child {
-   border-right: 2px solid bisque;
+   border-right: 2px solid hsl(49, 8%, 40%);
 }
 
 tbody tr:last-child td,
 tr:last-child th {
-    border-bottom: 2px solid bisque;
+    border-bottom: 2px solid hsl(49, 8%, 40%);
 }
 
 tbody tr:last-child th:first-child {
@@ -111,6 +113,10 @@ tbody tr:last-child th:first-child {
 
 tr:last-child td:last-child {
    border-bottom-right-radius: 5px;
+}
+
+a {
+    color: #2b79a2;
 }
 
 #quote {
@@ -145,15 +151,15 @@ tr:last-child td:last-child {
 }
 
 #copyright {
-    background-color: bisque;
+    background-color: hsl(14, 17%, 20%);
+    color: hsl(237, 21%, 82%);
     padding: 0.4rem; 
     padding-inline: 1rem;
 }
 
-@media (max-width: 50rem) {  
-    header, main, footer  {
+@media (max-width: 50rem) {
+    body {
         margin-left: 0;
-        width: 100%;   
     }
 
     aside {
